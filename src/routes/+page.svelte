@@ -1,8 +1,17 @@
+<script>
+    import Nav from '../components/Nav.svelte'
+    import ArtPage from '../components/ArtPage.svelte'
+</script>
 
 
+<Nav/>
 
-<h1>
-    <i class="bi bi-house-fill"></i>
-    Welcome to SvelteKit
-</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+<div class="p-5">
+
+    <h1>welcome</h1>
+
+
+    <ArtPage/>
+
+</div>
