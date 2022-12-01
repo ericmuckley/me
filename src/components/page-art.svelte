@@ -1,5 +1,123 @@
 <script>
+    const categories = [
+        {
+            name: "Watercolor",
+            items: [
+                {path: "baker_beach.jpg", title: "Baker Beach, San Francisco, California"},
+                {path: "moonwhales.jpg", title: "Ethereum whales"},
+                {path: "longlake.jpg", title: "Long lake, Sierra Nevada, California"},
+                {path: "red_blue_forest.jpg", title: "Red and blue forest"},
+                {path: "sdbuildings.jpg", title: "San Diego, California"},
+                {path: "redsmokies.jpg", title: "Autumn in the mountains"},
+                {path: "dinosaurs.jpg", title: "Prehistoric monsters"},
+                {path: "milkyway.jpg", title: "Milky way"},
+                {path: "skull.jpg", title: "Bad omens"},
+                {path: "watercolorvolcano.jpg", title: "Prehistoric landscape"},
+                {path: "yellowvolcanosmoke.jpg", title: "prehistoric landscape 2"},
+                {path: "birdrock_sunset.jpg", title: "Sunset Cliffs, San Diego, California"},
+                {path: "ob_subset.jpg", title: "OB pier, San Diego, California"},
+                {path: "bratislava.jpg", title: "Bratislava Castle, Slovakia"},
+                {path: "hertfordbridge.JPG", title: "Hertford Bridge in Oxford, UK"},
+                {path: "abstractcanoe.jpg", title: "Watercolor dream"},
+                {path: "barn.jpg", title: "Barn in the snow"},
+                {path: "candace.jpg", title: "Moonlit river"},
+                {path: "frame.JPG", title: "Winter cabin"},
+                {path: "knox.JPG", title: "Knoxville, tennessee"},
+                {path: "whitney.jpg", title: "Mount Whitney, Sierra Nevada, California"},
+                {path: "adams.jpg", title: "Mount Adams, Cascades, Washington"},
+                {path: "virginiapass.jpg", title: "Virginia pass, Sierra Nevada, California"},
+                {path: "oldtruck.jpg", title: "Old truck in Joshua Tree, California"},
+                {path: "barninsnow.jpg", title: "Barn in snow"},
+                {path: "lauren_wedding.jpg", title: "Lauren and Austin getting married"},
+            ],
+        },
+        {
+            name: "Acrylic, digital, and mixed media",
+            items: [
+                {path: "tripanelsilverlake.jpg", title: "Silver Lake, Sierra Nevada"},
+                {path: "wave_birds.jpg", title: "Birds in the sunset"},
+                {path: "wavemnt.jpg", title: "Waves and mountains"},
+                {path: "volcanosun.jpg", title: "volcano with rising sun"},
+                {path: "leroy.jpg", title: "Dark winter night"},
+                {path: "colorwaves.jpg", title: "Big Sur, California"},
+                {path: "pier.JPG", title: "Ocean Beach pier, California"},
+                {path: "skulllogo.jpg", title: "Label for muckley brewing company"},
+                {path: "egretsunset.jpg", title: "Egret sunset"},
+                {path: "bridge_fog.jpg", title: "Fog in San Francisco, California"},
+                {path: "buddha.jpg", title: "Serenity"},
+                {path: "waveroad.jpg", title: "Beach town"},
+                {path: "obremix.jpg", title: "Ocean Beach, San Diego, California"},
+                {path: "sixcrane.jpg", title: "Label for six crane IPA"},
+                {path: "sunset.JPG", title: "Trees with sunset"},
+                {path: "winterroad.jpg", title: "Dark road"},                
+            ],
+        },
+        {
+            name: "Pencil and Pen",
+            items: [
+                {path: "pop.JPG", title: "Pop"},
+                {path: "buildingjumble.jpg", title: "Concrete jungle"},
+                {path: "birdwallpic.jpg", title: "Birds drawn on the wall"},
+                {path: "wavetree.jpg", title: "Tree on beach"},
+                {path: "pencil_forest.jpg", title: "Sierra Nevada, california"},
+                {path: "oxford_pencil.jpg", title: "Oxford, UK"},                
+            ],
+        },
+    ]
+
+    const basePath = "https://raw.githubusercontent.com/ericmuckley/ericmuckley.github.io/master/static/img/art/"
+    let selectedImgTitle = "Pop"
+    let selectedImgPath = "pop.JPG"
+
+    function handleArtClick(item) {
+        selectedImgTitle = item.title
+        selectedImgPath = item.path
+    }
+
 
 </script>
 
-<div>Some art</div>
+
+{#each categories as category}
+
+    <h1 class="mb-0">{category.name}</h1>
+    <hr class="mt-1 mb-3">
+
+    <div class="row mb-5">
+
+        {#each category.items as item}
+
+            <div class="col mb-3">
+                <!-- svelte-ignore missing-declaration -->
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <img
+                    class="hover-glow"
+                    width="200"
+                    data-bs-toggle="modal"
+                    data-bs-target="#artmodal"
+                    on:click={() => {handleArtClick(item)}}
+                    src="{basePath + item.path}"
+                    alt={item.title} />
+            </div>
+            
+        {/each}
+
+    </div>
+
+
+{/each}
+
+
+<div class="modal fade" id="artmodal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">{selectedImgTitle}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <img width="100%" src={basePath + selectedImgPath} alt={selectedImgTitle} />
+            </div>
+        </div>
+    </div>
+</div>

@@ -13,7 +13,7 @@
     
 </script>
 
-<nav class="navbar navbar-expand-lg bg-secondary">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand nav-link" href="#home">
             e
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navcontent">
             <div class="navbar-nav me-auto mb-2 mb-lg-0">
                 {#each items as item}
-                    <a href="#{item.name}" class="text-nowrap nav-link">
+                    <a href="#{item.name}" class="text-nowrap nav-link active">
                         <i class="bi bi-{item.icon} me-2"></i>{item.name}
                     </a>
                 {/each}
