@@ -1,17 +1,26 @@
 <script>
+    import { onMount } from 'svelte';
     import Nav from '../components/Nav.svelte'
-    import ArtPage from '../components/ArtPage.svelte'
+    import HomePage from '../components/page-home.svelte'
+    import WebPage from '../components/page-web.svelte'
+    import ArtPage from '../components/page-art.svelte'
+    let currentPage
+	const routingMap = {
+        '#art': ArtPage,
+		'#web': WebPage,
+	};
+
+    onMount(populatePage)
+	function populatePage() {
+        currentPage = routingMap[location.hash] || HomePage;
+	}
+
 </script>
 
+<svelte:window on:hashchange={populatePage} />
 
 <Nav/>
 
-
 <div class="p-5">
-
-    <h1>welcome</h1>
-
-
-    <ArtPage/>
-
+    <svelte:component this={currentPage} />
 </div>
