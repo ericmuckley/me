@@ -11,9 +11,7 @@
                 {path: "redsmokies.jpg", title: "Autumn in the mountains"},
                 {path: "dinosaurs.jpg", title: "Prehistoric monsters"},
                 {path: "milkyway.jpg", title: "Milky way"},
-                {path: "skull.jpg", title: "Bad omens"},
-                {path: "watercolorvolcano.jpg", title: "Prehistoric landscape"},
-                {path: "yellowvolcanosmoke.jpg", title: "prehistoric landscape 2"},
+                {path: "yellowvolcanosmoke.jpg", title: "Prehistoric landscape 2"},
                 {path: "birdrock_sunset.jpg", title: "Sunset Cliffs, San Diego, California"},
                 {path: "ob_subset.jpg", title: "OB pier, San Diego, California"},
                 {path: "bratislava.jpg", title: "Bratislava Castle, Slovakia"},
@@ -29,24 +27,26 @@
                 {path: "oldtruck.jpg", title: "Old truck in Joshua Tree, California"},
                 {path: "barninsnow.jpg", title: "Barn in snow"},
                 {path: "lauren_wedding.jpg", title: "Lauren and Austin getting married"},
+                {path: "skull.jpg", title: "Bad omens"},
+                {path: "watercolorvolcano.jpg", title: "Prehistoric landscape"},
             ],
         },
         {
             name: "Acrylic, digital, and mixed media",
             items: [
                 {path: "tripanelsilverlake.jpg", title: "Silver Lake, Sierra Nevada"},
-                {path: "wave_birds.jpg", title: "Birds in the sunset"},
-                {path: "wavemnt.jpg", title: "Waves and mountains"},
-                {path: "volcanosun.jpg", title: "volcano with rising sun"},
                 {path: "leroy.jpg", title: "Dark winter night"},
-                {path: "colorwaves.jpg", title: "Big Sur, California"},
                 {path: "pier.JPG", title: "Ocean Beach pier, California"},
                 {path: "skulllogo.jpg", title: "Label for muckley brewing company"},
                 {path: "egretsunset.jpg", title: "Egret sunset"},
+                {path: "obremix.jpg", title: "Ocean Beach, San Diego, California"},
+                {path: "wave_birds.jpg", title: "Birds in the sunset"},
+                {path: "wavemnt.jpg", title: "Waves and mountains"},
+                {path: "volcanosun.jpg", title: "Volcano with rising sun"},
+                {path: "colorwaves.jpg", title: "Big Sur, California"},
                 {path: "bridge_fog.jpg", title: "Fog in San Francisco, California"},
                 {path: "buddha.jpg", title: "Serenity"},
                 {path: "waveroad.jpg", title: "Beach town"},
-                {path: "obremix.jpg", title: "Ocean Beach, San Diego, California"},
                 {path: "sixcrane.jpg", title: "Label for six crane IPA"},
                 {path: "sunset.JPG", title: "Trees with sunset"},
                 {path: "winterroad.jpg", title: "Dark road"},                
@@ -55,12 +55,12 @@
         {
             name: "Pencil and Pen",
             items: [
-                {path: "pop.JPG", title: "Pop"},
-                {path: "buildingjumble.jpg", title: "Concrete jungle"},
                 {path: "birdwallpic.jpg", title: "Birds drawn on the wall"},
                 {path: "wavetree.jpg", title: "Tree on beach"},
+                {path: "oxford_pencil.jpg", title: "Oxford, UK"}, 
                 {path: "pencil_forest.jpg", title: "Sierra Nevada, california"},
-                {path: "oxford_pencil.jpg", title: "Oxford, UK"},                
+                {path: "pop.JPG", title: "Pop"},
+                {path: "buildingjumble.jpg", title: "Concrete jungle"},             
             ],
         },
     ]
@@ -80,7 +80,7 @@
 
 {#each categories as category}
 
-    <h1 class="mb-0">{category.name}</h1>
+    <h4 class="mb-0">{category.name}</h4>
     <hr class="mt-1 mb-3">
 
     <div class="row mb-5">
@@ -111,9 +111,9 @@
 <div class="modal fade" id="artmodal" tabindex="-1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-dark border-0">
                 <h1 class="modal-title fs-5">{selectedImgTitle}</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0">
                 <img width="100%" src={basePath + selectedImgPath} alt={selectedImgTitle} />

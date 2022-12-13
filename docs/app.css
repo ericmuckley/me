@@ -1,12 +1,44 @@
+
 body {
+    background-color: #212529;
+}
+
+
+.navbar {
+    border-bottom: 1px solid aquamarine;
+}
+
+.modal-backdrop {
+    opacity: 100 !important;
+}
+
+.btn-primary {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: aquamarine;
+}
+
+.btn-primary:hover {
+    border: 1px solid aquamarine;
     background-color: black;
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+a:hover {
+    color: aquamarine;
+    text-decoration: underline;
 }
 
 hr {
     display: block;
     height: 1px;
-    border: 1px solid teal;
-    border-top: 0px solid teal;
+    border: 1px solid aquamarine;
+    border-top: 0px solid aquamarine;
     margin: 1em 0;
     padding: 0;
     opacity: 100;
@@ -14,24 +46,46 @@ hr {
 
 h1 {
     font-weight: 300;
-    color: teal;
-    /*text-shadow: 0px 0px 3px white;*/
-    
+    color: white;
+    /*text-shadow: 0px 0px 3px white;*/  
+}
+h4 {
+    color: white;
+    /*text-shadow: 0px 0px 3px white;*/  
 }
 
-
-.nav-link .active {
-    color: teal;
+.nav-link {
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+.nav-link.active {
+    color: aquamarine !important;
+    border-bottom: 3px solid aquamarine;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: aquamarine;
+    text-decoration: none;
+    /*border-bottom: 3px solid white;*/
 }
 
+.colored {
+    color: white;
+}
+
+.footer-text {
+    color: lightslategray;
+}
 
 .hover-glow {
     border: 1px solid black;
-    box-shadow: 0px 4px 8px lightgray;
+    box-shadow: 0px 4px 16px black;
 }
 
 .hover-glow:hover {
-    border: 1px solid teal;
-    box-shadow: 0px 4px 16px teal;
+    border: 1px solid aquamarine;
+    box-shadow: 0px 4px 16px aquamarine;
     cursor: pointer;
 }
+
+/*dark: #212529*/
