@@ -31,9 +31,9 @@
             ,
             img: [
                 {"url": "IMES_broadband.JPG", "title": "Capabilities of the autonomous characterization system"},
-                {"url": "systemflowchart.jpg", "title": "Schematic of automated environmental characterization system"},
+                //{"url": "systemflowchart.jpg", "title": "Schematic of automated environmental characterization system"},
                 {"url": "IMES_screenshot.JPG", "title": "Python-based control software"},
-                {"url": "chamber_controller.jpg", "title": "LabVIEW-based control software"},
+                //{"url": "chamber_controller.jpg", "title": "LabVIEW-based control software"},
                 {"url": "system343b.jpg", "title": "Autonomous characterization system"},
                 {"url": "systemcentered.jpg", "title": "Autonomous characterization system"},
             ],
@@ -156,10 +156,21 @@
         </div>
     {/if}
 
+    {#if topic.hasOwnProperty('img')}
+
+        {#each topic.img as img}
+            <div class="mt-5 w-100 mx-auto text-center">
+                <div class="colored mb-2">{img.title}</div>
+                <img src="me/images/{img.url}" alt={img.title} style="width: 85vw;">
+            </div>
+        {/each}
+
+    {/if}
+
     {#if topic.hasOwnProperty('vid')}
 
         {#each topic.vid as vid}
-            <div class="my-3 w-100">
+            <div class="mt-5 w-100">
                 <iframe title={vid.url} src={vid.url} allowfullscreen="true" style="min-height: 50vh; width: 100%">
                 </iframe>
             </div>
