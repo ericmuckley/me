@@ -13,7 +13,6 @@
                 `
             ,
             img: [
-                //{"url": "cript_homepage.png", "title": "CRIPT homepage"},
                 {"url": "cript_process.png", "title": "Example of material processing data displayed in CRIPT"},
             ],
             vid: [
