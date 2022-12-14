@@ -151,7 +151,7 @@
             img: [
                 {"url": "QCMD-app-UI.JPG", "title": "QCM-D modeling application"},
                 {"url": "QCMD-app-df-surface.JPG", "title": "Calculated surface for solutions in fequency shift space"},
-                {"url": "QCMD-app-dD-surface.JPG", "title": "Calculated surface for solutinos in eneergy dissipation space"},
+                {"url": "QCMD-app-dD-surface.JPG", "title": "Calculated surface for solutions in eneergy dissipation space"},
                 {"url": "QCMD-app-solution.JPG", "title": "Estimation of point at which different solution spaces converge"},
             ],
             vid: [
