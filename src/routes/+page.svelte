@@ -29,7 +29,7 @@
 
     <svelte:component this={currentPage} />
     
-    <div class="mt-5 mb-3 footer-text">&copy; Eric Muckley | All rights reserved</div>
+    <div class="mt-5 mb-3 footer-text text-center">&copy; Eric Muckley | All rights reserved</div>
 
 </div>
 
