@@ -51,11 +51,11 @@
                 are powerful tools for creating predictive models, but tuning of model
                 parameters is often difficult due to the large number of degrees of
                 freedom in the model. One of the primary challenges associated with
-                the use of NNs is optimization of the network design, as NNs may contain many
+                NNs is optimization of the network design, as NNs may contain many
                 hidden neuron layers, each containing large numbers of neurons. 
-                Furthermore, learning rate and quality and quantity of data used for
-                training/testing/validating the model may significantly impact model performance.
-                Shown below are examples of results from diagnostic software for assessing
+                Learning rate and quality and quantity of data used for
+                training/testing/validating the model also impact model performance.
+                Shown below are examples of results from custom diagnostic software for assessing
                 performance of machine learning models based on average residual,
                 number of training samples, and training time.
                 Performance of NNs based on the number of neurons in the first and
@@ -84,8 +84,7 @@
             text: 
                 `
                 Reliable tools for automated peak detection and spectral deconvolution are critical
-                in many areas of science and engineering. I have spent years developing
-                software for peak detection, deconvolutiion, modeling, and simulation. Shown below is an example
+                in many areas of science and engineering. Shown below is an example
                 of automatic peak detection in complex spectra, deconvolution of the signal
                 by simulation of Gaussian-shaped peaks, and reconstruction of the fitted signal by convolution
                 of the fitted peaks. The video below shows real-time fitting of multi-peak spectra of an acoustic
@@ -97,25 +96,21 @@
             img: [
                 {"url": "peakfinder.png", "title": "Automated peak detection in complex spectra"},
                 {"url": "caseinpeaks.png", "title": "Spectral deconvolution by simulation of constituent peaks"},
-                {"url": "caseinpeakfits.png", "title": "Spectral resconstruction by simulatde peaks"},
             ],
             vid: [
                 {"url": "https://www.youtube.com/embed/G8a7ou1wLBw?autoplay=0&loop=1&playlist=G8a7ou1wLBw"},
             ],
         },
     
-
-
-
-            {
+        {
             name: "Batch sensor analytics",
             link: "batchanalytics",
             //github: "https://github.com/ericmuckley/IMES",
             text: 
                 `
-                For rapid processing of multi-sensor data streams, I created software
-                which models sensor response by batch fitting raw signals to different
-                time-series models in real time. In the example shown below, sensing material
+                For rapid processing of multi-sensor data streams, custom software
+                is used to model sensor response by batch fitting raw signals to different
+                time-series models in real time. In the example shown below, a sensor
                 is exposed to a pulsed stimulus, which may correspond to any environmental change
                 (temperature fluctuation, pressure spike, humidity shift, etc).
                 Response of the sensor during exposure to the environmental stimulus is
@@ -125,9 +120,10 @@
                 A mathematical model is selected (either automatically or manually, based on the application)
                 and the signal in each ROI is fit to the model. Full fits, fitting parameters and fit
                 quality metrics are extracted for comprehensive characterization of the sensor dynamics
-                and response. The algorithm is designed to handle data types emanating
-                from diverse sources (i.e. gravimetic, electrical, optical, etc.) so that
-                complex data streams from multi-modal sensor arrays may be processed rapidly without manual human effort.
+                and response. The algorithm is designed to handle data types originating
+                from diverse sensing sources so that
+                complex data streams from multi-modal sensor arrays may
+                be processed rapidly without manual human effort.
                 `
             ,
             img: [
@@ -149,7 +145,7 @@
                 properties of thin films coated on top of the crystal surface. Modeling QCM-D response to
                 extract dynamic film properties requires specialized numerical solvers. I created an application
                 for estimating modeling parameters that can be used to initialize algorithms such as Newton's method
-                for convereting raw QCM-D data into estimates of film thickness, density, shear modulus, and bulk modulus.
+                for converting raw QCM-D data into estimates of film thickness, density, shear modulus, and bulk modulus.
                 `
             ,
             img: [
