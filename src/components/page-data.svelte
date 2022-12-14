@@ -15,11 +15,12 @@
             link: "rt-ml",
             text: 
                 `
-                Machine learning is commonly used to create a predictive model
-                from a large static dataset. To reap the benefits of predictive analytics
-                in real-time, it is often necessary to stream data directly from acquisition
-                sources into model training. This enables dynamic models which improve
-                as training data evolves.
+                Machine learning is commonly used to create predictive models
+                from static datasets. To reap the benefits of predictive analytics
+                in real-time, its often necessary to stream data directly from acquisition
+                sources into model training workflows. This enables dynamic models which improve
+                as training data evolves and helps to avoid model drift.
+                <br><br>
                 Examples of real-time machine learning classification and regression are shown below.
                 The classification model is trained to distinguish between three types of adsorption
                 isotherms using real-time acquisition of isotherm data.
@@ -33,9 +34,7 @@
                 The model and prediction evolve as new data is acquired and added to the training set.
                 `
             ,
-            img: [
-                //{"url": "caseinpeakfits.png", "title": "Spectral resconstruction by simulatde peaks"},
-            ],
+            img: [],
             vid: [
                 {"url": "https://www.youtube.com/embed/iIOD1UxuxVo?autoplay=0&loop=1&playlist=iIOD1UxuxVo"},
                 {"url": "https://www.youtube.com/embed/qShslUHae9w?autoplay=0&loop=1&playlist=qShslUHae9w"},

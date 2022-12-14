@@ -99,11 +99,12 @@ import{S as z,i as U,s as $,k as b,a as x,l as y,m as S,h,c as N,n as m,b as k,G
         I have years of experience leading machine learning projects for automated experimentation,
         experiment planning, process control, and materials design.
     `}=e,{topics:r=[{name:"Real-time machine learning",link:"rt-ml",text:`
-                Machine learning is commonly used to create a predictive model
-                from a large static dataset. To reap the benefits of predictive analytics
-                in real-time, it is often necessary to stream data directly from acquisition
-                sources into model training. This enables dynamic models which improve
-                as training data evolves.
+                Machine learning is commonly used to create predictive models
+                from static datasets. To reap the benefits of predictive analytics
+                in real-time, its often necessary to stream data directly from acquisition
+                sources into model training workflows. This enables dynamic models which improve
+                as training data evolves and helps to avoid model drift.
+                <br><br>
                 Examples of real-time machine learning classification and regression are shown below.
                 The classification model is trained to distinguish between three types of adsorption
                 isotherms using real-time acquisition of isotherm data.
