@@ -31,9 +31,7 @@
             ,
             img: [
                 {"url": "IMES_broadband.JPG", "title": "Capabilities of the autonomous characterization system"},
-                //{"url": "systemflowchart.jpg", "title": "Schematic of automated environmental characterization system"},
                 {"url": "IMES_screenshot.JPG", "title": "Python-based control software"},
-                //{"url": "chamber_controller.jpg", "title": "LabVIEW-based control software"},
                 {"url": "system343b.jpg", "title": "Autonomous characterization system"},
                 {"url": "systemcentered.jpg", "title": "Autonomous characterization system"},
             ],
@@ -122,7 +120,6 @@
             ,
             img: [
                 {"url": "carboy.JPG", "title": "Fermentation vessel with sensors and camera"},
-                {"url": "carboy_bag.JPG", "title": "Fermentation vessel and sensors covered in air-tight seal"},
             ],
             vid: [
                 {"url": "https://www.youtube.com/embed/_vpxnixSp3A?autoplay=0&loop=1&playlist=_vpxnixSp3A"},
