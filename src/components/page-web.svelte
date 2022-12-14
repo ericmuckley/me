@@ -1,6 +1,15 @@
 <script>
+    import StandardPageContent from './StandardPageContent.svelte'
 
-    const topics = [
+    export let title = "Web development, data interactivity, and visualization"
+
+    export let intro = `
+        I have been the lead full-stack developer on several large-scale web application projects involving 
+        frontend design and engineering, backend engineeering, API creation, data schema development,
+        and database configuration and management.
+    `
+
+    export let topics = [
         {
             name: "CRIPT",
             link: "cript",
@@ -61,15 +70,7 @@
 
     ]
 
-    const introText = `
-        I have been the lead developer on several large-scale web application projects, including 
-        frontend design and engineering, backend engineeering, API creation, data schema development,
-        and database configuration and management. One example is this site: it is a single-page application 
-        which I build from scratch without using a frontend framework like React or Angular.
-    `;
-
 </script>
 
-<h1>Web development, data interactivity, and visualization</h1>
-<hr>
 
+<StandardPageContent title={title} intro={intro} topics={topics} />

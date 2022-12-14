@@ -66,9 +66,9 @@
 <div class="row">
 
     <div class="col">
-        <h1>Welcome</h1>
+        <h1>Hi there</h1>
         <p class="colored">
-            Browse some of my interests, view some of my publications, or read more at the links below.
+            I'm Eric Muckley. Browse some of my interests here or visit my other profiles at the links below.
         </p>
 
 
