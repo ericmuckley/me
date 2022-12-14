@@ -65,6 +65,14 @@
         },
     ]
 
+    const musicItems = [
+        {"name": "Anthem guitar", "url": "metal guitar leads.mp3"},
+        {"name": "Pianos", "url": "pianos.mp3"},
+        {"name": "Strings", "url": "realverse.mp3"},
+        {"name": "Steel drum with bass", "url": "steel drum and bass.mp3"},
+        {"name": "Dark hiphop", "url": "dark hiphop.mp3"},
+    ]
+
     const basePath = "https://raw.githubusercontent.com/ericmuckley/ericmuckley.github.io/master/static/img/art/"
     let selectedImgTitle = "Pop"
     let selectedImgPath = "pop.JPG"
@@ -87,36 +95,48 @@
 
         {#each category.items as item}
 
-            <div class="col mb-3">
-                <!-- svelte-ignore missing-declaration -->
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <img
-                    class="hover-glow"
-                    width="200"
-                    data-bs-toggle="modal"
-                    data-bs-target="#artmodal"
-                    on:click={() => {handleArtClick(item)}}
-                    src="me/images/art/{item.path}"
-                    alt={item.title} />
-            </div>
+                <div class="col mb-3">
+                    <!-- svelte-ignore missing-declaration -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <img
+                        class="hover-glow"
+                        width="200"
+                        data-bs-toggle="modal"
+                        data-bs-target="#artmodal"
+                        on:click={() => {handleArtClick(item)}}
+                        src="me/images/art/{item.path}"
+                        alt={item.title} />
+                </div>
             
         {/each}
 
     </div>
 
+{/each}
 
+
+
+<h4 class="mb-0">Original music</h4>
+<hr class="mt-1 mb-3">
+{#each musicItems as item}
+    <div class="my-2">
+        <div class="colored ms-4">{item.name}</div>
+        <audio src="me/music/{item.url}" controls>
+            <track kind="captions" />
+        </audio>        
+    </div>
 {/each}
 
 
 <div class="modal fade" id="artmodal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg rounded-0">
         <div class="modal-content">
             <div class="modal-header bg-dark border-0">
                 <h1 class="modal-title fs-5">{selectedImgTitle}</h1>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0">
-                <img width="100%" src={basePath + selectedImgPath} alt={selectedImgTitle} />
+                <img width="100%" src="me/images/art/{selectedImgPath}" alt={selectedImgTitle} />
             </div>
         </div>
     </div>
