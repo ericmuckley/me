@@ -96,7 +96,7 @@
                     data-bs-toggle="modal"
                     data-bs-target="#artmodal"
                     on:click={() => {handleArtClick(item)}}
-                    src="{basePath + item.path}"
+                    src="me/images/art/{item.path}"
                     alt={item.title} />
             </div>
             
