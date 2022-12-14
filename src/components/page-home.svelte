@@ -77,7 +77,7 @@
             <hr>
             {#each contactLinks as item}
                 <div>
-                    <a class="mb-2 w-100 btn btn-primary text-start" href="{item.url}" target="_blank" rel="noreferrer">
+                    <a class="mb-2 w-100 btn btn-primary text-start rounded-pill" href="{item.url}" target="_blank" rel="noreferrer">
                         <i class="bi bi-{item.icon} me-3"></i>{item.name}
                     </a>                
                 </div>

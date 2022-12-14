@@ -1,6 +1,5 @@
 <script>
     import { onMount } from 'svelte'
-  import Page from '../routes/+page.svelte';
     export let active = "home"
     export const items = [
         {name: "home", icon: "house"},

@@ -73,7 +73,6 @@
         {"name": "Dark hiphop", "url": "dark hiphop.mp3"},
     ]
 
-    const basePath = "https://raw.githubusercontent.com/ericmuckley/ericmuckley.github.io/master/static/img/art/"
     let selectedImgTitle = "Pop"
     let selectedImgPath = "pop.JPG"
 
@@ -95,18 +94,18 @@
 
         {#each category.items as item}
 
-                <div class="col mb-3">
-                    <!-- svelte-ignore missing-declaration -->
-                    <!-- svelte-ignore a11y-click-events-have-key-events -->
-                    <img
-                        class="hover-glow"
-                        width="200"
-                        data-bs-toggle="modal"
-                        data-bs-target="#artmodal"
-                        on:click={() => {handleArtClick(item)}}
-                        src="me/images/art/{item.path}"
-                        alt={item.title} />
-                </div>
+            <div class="col mb-3">
+                <!-- svelte-ignore missing-declaration -->
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <img
+                    class="hover-glow"
+                    width="200"
+                    data-bs-toggle="modal"
+                    data-bs-target="#artmodal"
+                    on:click={() => {handleArtClick(item)}}
+                    src="me/images/art/{item.path}"
+                    alt={item.title} />
+            </div>
             
         {/each}
 
@@ -131,7 +130,7 @@
 <div class="modal fade" id="artmodal" tabindex="-1">
     <div class="modal-dialog modal-lg rounded-0">
         <div class="modal-content">
-            <div class="modal-header bg-dark border-0">
+            <div class="modal-header bg-dark border-0 rounded-0">
                 <h1 class="modal-title fs-5">{selectedImgTitle}</h1>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
