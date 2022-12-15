@@ -66,11 +66,11 @@
 <div class="row">
 
     <div class="col">
-        <h1 style="text-shadow: 0px 0px 40px aquamarine; color: black; font-weight: 300;">
+        <h1 style="font-weight: 300;">
             WELCOME
         </h1>
         <p class="colored">
-            I'm Eric Muckley. Browse some of my interests here or visit my other profiles at the links below.
+            Browse some of my interests here or visit my other profiles at the links below.
         </p>
 
 
