@@ -15,12 +15,13 @@
     }
 
     onMount(() => {
-       showActiveNavLink() 
+        showActiveNavLink() 
         window.addEventListener('hashchange', showActiveNavLink)
     })
 
     function handleNavbarCollapse() {
         console.log()
+        document.body.scrollTop = document.documentElement.scrollTop = 0
         let isShown = Array.from(document.getElementById("navcontent").classList).includes("show")
         if (isShown) {
             document.getElementById("toggler-btn").click()

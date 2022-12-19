@@ -35,7 +35,7 @@
 
     {#if topic.hasOwnProperty('github')}
         <div class="text-center">
-            <a href="{topic.github}" class="btn btn-lg btn-primary px-4 text-start my-2 rounded-pill" target="_blank" rel="noreferrer">
+            <a href="{topic.github}" class="btn btn-lg btn-primary px-4 text-start my-2" target="_blank" rel="noreferrer">
                 <i class="bi bi-github me-2"></i>View project on Github
             </a>
         </div>

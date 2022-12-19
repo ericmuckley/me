@@ -31,6 +31,85 @@
             url: "ESM_MOT.pdf",
         },
     ]
+    const skills = [
+        {
+            topic: "Data science + machine learning",
+            items: [
+                {text: "Pytorch", url: ""},
+                {text: "Tensorflow / Keras", url: ""},
+                {text: "Scipy / scikit-learn / pandas / numpy / matplotlib / plotly"},
+                {text: "Matminer / pymatgen", url: ""},
+                {text: "RDKit", url: ""},
+                {text: "SQL", url: ""},
+                {text: "noSQL", url: ""},
+                {text: "Matlab", url: ""},
+            ],
+        },
+        {
+            topic: "Hardware + software integration",
+            items: [
+                {text: "NI DAQ", url: ""},
+                {text: "LabView", url: ""},
+                {text: "Raspberry Pi", url: ""},
+                {text: "Arduino", url: ""},
+                {text: "Serial communication", url: ""},
+            ],
+        },
+        {
+            topic: "Web development",
+            items: [
+                {text: "Django", url: ""},
+                {text: "Flask", url: ""},
+                {text: "Javascript", url: ""},
+                {text: "NodeJS", url: ""},
+                {text: "Svelte", url: ""},
+                {text: "Bootstrap", url: ""},
+                {text: "Material design", url: ""},
+                {text: "Git", url: ""},
+                {text: "HTML", url: ""},
+                {text: "CSS", url: ""},
+
+            ],
+        },
+        {
+            topic: "Laboratory",
+            items: [
+                {text: "Vacuum chamber assembly + operation", url: ""},
+                {text: "Laser assembly + operation", url: ""},
+                {text: "Compressed gas training + safety", url: ""},
+                {text: "Electronics protyping, soldering, troubleshooting"},
+                {text: "QCMD, AFM/KPFM, TGA, BET, EIS, SPE, XRD, XRR, AGM, VSM", url: ""},
+            ],
+        },
+        {
+            topic: "Web3",
+            items: [
+                {text: "Solidity", url: ""},
+                {text: "Hardhat", url: ""},
+                {text: "Truffle", url: ""},
+                {text: "Infura", url: ""},
+                {text: "Moralis", url: ""},
+                {text: "Ethers.js", url: ""},    
+                {text: "Web3.js", url: ""},            
+                {text: "Web3.py", url: ""},
+                {text: "Etherscan API", url: ""},
+                {text: "OpenSea API", url: ""},
+            ],
+        },
+        {
+            topic: "Multimedia",
+            items: [
+                {text: "Adobe Photoshop", url: ""},
+                {text: "Adobe Premiere", url: ""},
+                {text: "iMovie", url: ""},
+                {text: "OriginPro", url: ""},
+                {text: "GIMP", url: ""},    
+                {text: "Blender", url: ""},            
+                {text: "CAD", url: ""},
+                {text: "ImageJ", url: ""},
+            ],
+        },
+    ]
     const topics = {
         "Patent applications": [
             {url: "https://patentimages.storage.googleapis.com/da/2e/22/6ebb3e19ae7536/US20220091571A1.pdf", text: "Multimodal dynamic characterization of materials under programmable environments and environment prediction"},
@@ -107,7 +186,7 @@
             <hr>
             {#each contactLinks as item}
                 <div>
-                    <a class="mb-2 w-100 btn btn-primary text-start rounded-pill" href="{item.url}" target="_blank" rel="noreferrer">
+                    <a class="mb-2 w-100 btn btn-primary text-start" href="{item.url}" target="_blank" rel="noreferrer">
                         <i class="bi bi-{item.icon} me-3"></i>{item.name}
                     </a>                
                 </div>
@@ -120,10 +199,10 @@
             <hr>
             {#each education as item}
                 <div class="my-3">
-                    <div class="colored">{item.degree} - {item.year}</div>
+                    <div class="colored">{item.degree}</div>
                     <div class="colored">{item.location}</div>
                     <a class="my-2 w-100 btn btn-primary text-start" href="me/papers/{item.url}" target="_blank" rel="noreferrer">
-                        {item.thesis}
+                        <b>Thesis: </b>{item.thesis}
                     </a>
                 </div>
 
@@ -131,6 +210,18 @@
         </div>
 
 
+        <div class="my-5">
+            <h4>Skills</h4>
+            <hr>
+            {#each skills as skill}
+                <div class="my-3">
+                    <div class="colored fw-bold mb-2">{skill.topic}</div>
+                    {#each skill.items as item}
+                        <div class="colored ps-3 ms-5" style="border-left: 1px solid aquamarine;">{item.text}</div>
+                    {/each}
+                </div>
+            {/each}
+        </div>
 
     </div>
 
