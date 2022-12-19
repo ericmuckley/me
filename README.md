@@ -1,6 +1,6 @@
 # me
 
-This is a portfolio site built using [Svelte](https://svelte.dev/) following the method outlined in [this guide](https://sveltesaas.com/articles/sveltekit-github-pages-guide/).
+This is a static site built using [Svelte](https://svelte.dev/) following the method outlined in [this guide](https://sveltesaas.com/articles/sveltekit-github-pages-guide/).
 
 
 ## Developing
