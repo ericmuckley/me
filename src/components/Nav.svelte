@@ -43,5 +43,8 @@
                 {/each}
             </div>
         </div>
+        <div class="nav-title mx-3">
+            eric muckley
+        </div>
     </div>
 </nav>

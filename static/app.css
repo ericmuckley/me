@@ -3,11 +3,13 @@ body {
     background-color: #212529;
 }
 
-.color-badge {
-    background-color: #dee2e6;
-    color: #212529;
+.nav-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: aquamarine;
+    cursor: default;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
-
 
 .navbar {
     border-bottom: 1px solid aquamarine;

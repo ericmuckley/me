@@ -94,8 +94,8 @@
 <div class="row">
 
     <div class="col">
-        <h1 style="font-weight: 300;">
-            WELCOME
+        <h1 class="nav-title" style="font-size: 3rem;">
+            Welcome
         </h1>
         <p class="colored">
             Browse some of my interests here or visit my other profiles at the links below.
