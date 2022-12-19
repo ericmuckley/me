@@ -7,8 +7,39 @@
         {name: 'StackOverflow', url: "https://stackoverflow.com/users/9325130/eric-m", icon: 'stack-overflow'},
         {name: 'Google scholar', url: "https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao", icon: 'book'},
     ]
+    const education = [
+        {
+            year: "2019",
+            degree: "Ph.D. Energy Science and Engineering",
+            location: "University of Tennessee, Knoxville, TN",
+            thesis: "High-throughput materials characterization with real time analytics and feedback",
+            url: "ESM_PhD_dissertation.pdf",
+        
+        },
+        {
+            year: "2013",
+            degree: "M.S. Applied Physics",
+            location: "California State University, Long Beach, CA",
+            thesis: "Optimizing film morphology in organic photovoltaics",
+            url: "ESM_MS_thesis.pdf",
+        },
+        {
+            year: "2009",
+            degree: "B.S. Physics",
+            location: "California Polytechnic State University, San Luis Obispo, CA",
+            thesis: "Constructing a magneto-optical trap for cold atom trapping",
+            url: "ESM_MOT.pdf",
+        },
+    ]
     const topics = {
-        "Selected peer-reviewed journal articles": [
+        "Patent applications": [
+            {url: "https://patentimages.storage.googleapis.com/da/2e/22/6ebb3e19ae7536/US20220091571A1.pdf", text: "Multimodal dynamic characterization of materials under programmable environments and environment prediction"},
+            {url: "https://patentimages.storage.googleapis.com/c9/ef/c3/185ebd80a502f7/US20220091083A1.pdf", text: "Chemical detection system with at least one electronic nose"},
+            {url: "https://patentimages.storage.googleapis.com/7e/1d/27/9ae03499badf76/US20220088876A1.pdf", text: "Additive manufacturing system with at least one electronic nose"},
+            {url: "https://patentimages.storage.googleapis.com/db/c0/53/f012135c36b06d/US20220091081A1.pdf", text: "Aroma detection systems for food and beverage and conversion of detected aromas to natural language descriptors"},
+        ],
+        "Selected journal articles": [
+            {url: "https://www.mdpi.com/2227-9040/10/4/143", text: "Spagnolo, S., Muckley, E.S., Ivanov, I.N. and Hianik, T., 2022. Application of Multiharmonic QCM-D for Detection of Plasmin at Hydrophobic Surfaces Modified by β-Casein. Chemosensors, 10(4), p.143."},
             {url: "https://pubs.rsc.org/en/content/articlelanding/2022/AN/D1AN01800K", text: "Spagnolo, S., Muckley, E.S., Ivanov, I.N. and Hianik, T., 2022. Analysis of trypsin activity at β-casein layers formed on hydrophobic surfaces using a multiharmonic acoustic method. Analyst."},
             {url: "https://www.nature.com/articles/s41467-021-22473-w", text: "Galuska, L.A., Muckley, E.S., Cao, Z., Ehlenberg, D.F., Qian, Z., Zhang, S., Rondeau-Gagné, S., Phan, M.D., Ankner, J.F., Ivanov, I.N. and Gu, X., 2021. SMART transfer method to directly compare the mechanical response of water-supported and free-standing ultrathin polymeric films. Nature Communications, 12(1), pp.1-11."},
             {url: "https://www.sciencedirect.com/science/article/pii/S138824812100045X", text: "Bakos, I., Vass, Á., Muckley, E.S., Ivanov, I.N. and Keresztes, Z., 2021. Indirect electrochemical method for high accuracy quantification of protein adsorption on gold surfaces. Electrochemistry Communications, 124, p.106961."},
@@ -31,16 +62,12 @@
             {url: "https://www.spiedigitallibrary.org/journals/journal-of-photonics-for-energy/volume-6/issue-3/038001/Imaging-of-electrical-response-of-NiOx-under-controlled-environment-with/10.1117/1.JPE.6.038001.short?sessionGUID=9d902bc9-993c-ed26-8bea-d49a28531ab0&sessionGUID=9d902bc9-993c-ed26-8bea-d49a28531ab0&webSyncID=e9e6ec7a-49da-b6a0-cbad-059329ad883c", text: "Jacobs, C.B., Ievlev, A.V., Collins, L.F., Muckley, E.S., Joshi, P.C. and Ivanov, I.N., 2016. Imaging of electrical response of NiOx under controlled environment with sub-25-nm resolution. Journal of Photonics for Energy, 6(3), pp.038001-038001."},
             {url: "https://www.osti.gov/pages/biblio/1331093", text: "Muckley, E.S., Miller, N., Jacobs, C.B., Gredig, T. and Ivanov, I.N., 2016. Morphology-defined interaction of copper phthalocyanine with O2/H2O. Journal of Photonics for Energy, 6(4), pp.045501-045501."},
         ],
-        "Academic theses": [
-            {type: "PhD dissertation", url: "static/papers/ESM_PhD_dissertation.pdf", text: "High-throughput multifunctional materials characterization with real-time analytics and feedback"},
-            {type: "Master of science thesis", url: "static/papers/ESM_MS_thesis.pdf", text: "Optimization of film morphology for organic thin film solar cells"},
-            {type: "Undergraduate thesis", url: "static/papers/ESM_MOT.pdf", text: "Constructing a magneto-optical trap for cold atom trapping"},
-         ],
         "Selected whitepapers": [
-            {url: "static/papers/OPVdegradation.pdf", text: "Degradation mechanisms in low bandgap polymer-fullerene photovoltaic devices"},
-            {url: "static/papers/solar_feasibility_study.pdf", text: "Feasibility study for photovoltaic array at Bishop Airport in Owens Valley, California"},
-            {url: "static/papers/water_policy_recommendation.pdf", text: "Review and recommendation for United States water policy"},
+            {url: "OPVdegradation.pdf", text: "Degradation mechanisms in low bandgap polymer-fullerene photovoltaic devices"},
+            {url: "solar_feasibility_study.pdf", text: "Feasibility study for photovoltaic array at Bishop Airport in Owens Valley, California"},
+            {url: "water_policy_recommendation.pdf", text: "Review and recommendation for United States water policy"},
         ],
+        /*
         "Conference presentations and invited talks": [
             {text: "Can adding sensor modalities lower detection limits and improve sensitivity? May 2019. FORMILK School 2019. Budapest, Hungary."},
             {text: "Computer-controlled probing of thin films and interfaces. September 2018. 1st North American Symposium on Dynamic Vapor Sorption Sciences. Philadelphia, PA."},
@@ -55,6 +82,7 @@
             {text: "Peeking at the Mechanisms of sensor operation and environment-induced degradation of electronic devices. June 2015. Brazilian Synchrotron Light Laboratory. Campinas, Brazil."},
             {text: "Effect of morphology on performance of organic thin film solar cells. May 2014. California State University Long Beach Student Research Competition. Long Beach, CA, USA."},
         ],
+        */
     }
 
     
@@ -74,7 +102,7 @@
         </p>
 
 
-        <div class="text-nowrap my-5">
+        <div class="my-5">
             <h4>Contact + links</h4>
             <hr>
             {#each contactLinks as item}
@@ -86,6 +114,24 @@
             {/each}
         </div>
 
+
+        <div class="my-5">
+            <h4>Education</h4>
+            <hr>
+            {#each education as item}
+                <div class="my-3">
+                    <div class="colored">{item.degree} - {item.year}</div>
+                    <div class="colored">{item.location}</div>
+                    <a class="my-2 w-100 btn btn-primary text-start" href="me/papers/{item.url}" target="_blank" rel="noreferrer">
+                        {item.thesis}
+                    </a>
+                </div>
+
+            {/each}
+        </div>
+
+
+
     </div>
 
 
@@ -94,27 +140,37 @@
 
         {#each Object.keys(topics) as topic}
 
-            <h4>{topic}</h4>
+
+            <h4>{topic} ({topics[topic].length})</h4>
+            
+
+            {#if topic.includes("journal")}
+                <a href="https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">
+                    View full publication list on Google Scholar
+                </a>
+            {/if}
+            
             <hr>
 
             {#each topics[topic] as item}
 
-                {#if topic.includes("journal")}
+                {#if ["journal", "patent"].some(x => topic.toLowerCase().includes(x))}
 
-                    <a class="mb-2 w-100 btn btn-primary text-start" href={item.url} target="_blank" rel="noreferrer">{item.text}</a>
+                    <a class="mb-2 w-100 btn btn-primary text-start" href={item.url} target="_blank" rel="noreferrer">
+                        {item.text}
+                    </a>
 
                 {:else if topic.includes("whitepapers")}
 
-                    <p class="colored">{item.text}</p>
-
-                {:else if topic.includes("theses")}
-
-                <p class="colored"><b>{item.type}:</b> {item.text}</p>
+                    <a class="mb-2 w-100 btn btn-primary text-start" href="me/papers/{item.url}" target="_blank" rel="noreferrer">
+                        {item.text}
+                    </a>
 
                 {:else if topic.includes("talks")}
 
-                    <p class="colored">{item.text}</p>
-                
+                    <p class="colored">
+                        {item.text}
+                    </p>
 
                 {/if}
             
