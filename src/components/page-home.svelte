@@ -35,9 +35,8 @@
         {
             topic: "data science + machine learning",
             items: [
-                {text: "Pytorch, Tensorflow, Keras, Scikit-learn, scipy, pandas, numpy, matplotlb, plotly", url: ""},
-                {text: "RDKit, Matminer, pymatgen", url: ""},
-                {text: "SQL, noSQL", url: ""},
+                {text: "Pytorch, Tensorflow, Keras, Scikit-learn, scipy, pandas, numpy, matplotlb, plotly, RDKit, Matminer, pymatgen", url: ""},
+                {text: "SQL, noSQL, MongoDB", url: ""},
                 {text: "Matlab", url: ""},
             ],
         },
@@ -45,8 +44,8 @@
             topic: "hardware + software integration",
             items: [
                 {text: "NI DAQ, LabView", url: ""},
-                {text: "Raspberry Pi, Arduino", url: ""},
                 {text: "Serial communication", url: ""},
+                {text: "Raspberry Pi, Arduino", url: ""},
             ],
         },
         {
@@ -56,8 +55,7 @@
                 {text: "Javascript, NodeJS, Svelte", url: ""},
                 {text: "D3.js, Plotly.js, Cytoscape.js, dragula.js"},              
                 {text: "Bootstrap, Material design", url: ""},
-                {text: "Git", url: ""},
-                {text: "HTML, CSS", url: ""},
+                {text: "Git, HTML, CSS", url: ""},
 
             ],
         },
@@ -73,10 +71,9 @@
             ],
         },
         {
-            topic: "blockhain + web3",
+            topic: "blockchain + web3",
             items: [
-                {text: "Solidity, Hardhat, Truffle, ", url: ""},
-                {text: "Infura, Moralis", url: ""},
+                {text: "Solidity, Hardhat, Truffle, Infura, Moralis", url: ""},
                 {text: "Ethers.js, Web3.js, Web3.py", url: ""},    
                 {text: "Etherscan API, OpenSea API", url: ""},
             ],
